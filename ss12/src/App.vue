@@ -12,7 +12,7 @@
           <option value="returned">Đã trả</option>
           <option value="not-returned">Chưa trả</option>
         </select>
-        <button class="btn btn-primary" @click="showAddForm">
+        <button class="btn btn-primary" @click="showAddAndEditForm">
           Thêm thông tin
         </button>
       </div>
@@ -190,7 +190,7 @@ const filteredBooks = computed(() => {
 });
 
 // Hiển thị form thêm sách
-const showAddForm = () => {
+const showAddAndEditForm = () => {
   isEditing.value = false;
   currentBook.value = {
     title: "",
