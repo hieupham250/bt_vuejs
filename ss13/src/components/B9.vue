@@ -17,7 +17,7 @@
         <v-text-field density="compact" variant="outlined"></v-text-field>
         <label for="">Message</label>
         <v-textarea label="Label" rows="1" variant="outlined"></v-textarea>
-        <v-btn color="primary" type="submit" block>Send</v-btn>
+        <v-btn color="primary" type="submit" class="btn-send">Send</v-btn>
       </v-form>
     </v-sheet>
 
@@ -60,7 +60,7 @@
           prepend-inner-icon="mdi-message"
         ></v-textarea>
 
-        <v-btn color="primary" type="submit" block>
+        <v-btn color="primary" type="submit" class="btn-send">
           <v-icon left>mdi-send</v-icon>
           Send
         </v-btn>
@@ -71,4 +71,8 @@
 
 <script setup></script>
 
-<style></style>
+<style>
+.btn-send {
+  width: 50px;
+}
+</style>
