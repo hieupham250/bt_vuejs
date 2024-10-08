@@ -23,10 +23,34 @@ import { ref, computed, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
 const products = ref([
-  { id: 1, name: "iPhone", price: 20000000, image: "iphone.jpg" },
-  { id: 2, name: "Samsung", price: 15000000, image: "samsung.jpg" },
-  { id: 3, name: "Vivo", price: 8000000, image: "vivo.jpg" },
-  { id: 4, name: "Xiaomi", price: 10000000, image: "xiaomi.jpg" },
+  {
+    id: 1,
+    name: "iPhone",
+    price: 20000000,
+    image:
+      "https://product.hstatic.net/1000406564/product/iphone11-tr_3064909d9a634a548fb3657c570f5c80_master.jpg",
+  },
+  {
+    id: 2,
+    name: "Samsung",
+    price: 15000000,
+    image:
+      "https://cdn.nguyenkimmall.com/images/detailed/895/10056368-dien-thoai-sam-sung-a05s-4gb-128gb-xanh-1.jpg",
+  },
+  {
+    id: 3,
+    name: "Vivo",
+    price: 8000000,
+    image:
+      "https://cdn.tgdd.vn/Products/Images/42/307203/vivo-y36-xanh-thumbnew-600x600.jpg",
+  },
+  {
+    id: 4,
+    name: "Xiaomi",
+    price: 10000000,
+    image:
+      "https://cdn.nguyenkimmall.com/images/detailed/883/10055781-dien-thoai-xiaomi-redmi-note-12-8gb-128gb-xanh-duong-1.jpg",
+  },
 ]);
 
 const searchQuery = ref("");
